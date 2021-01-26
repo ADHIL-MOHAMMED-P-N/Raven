@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
+import { TypeContext } from "./TypeContext";
 
 const Display = () => {
+  const [text] = useContext(TypeContext);
   return (
     <div>
-      <h1> Display </h1>
+      <h1>{text}</h1>
     </div>
   );
 };

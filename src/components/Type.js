@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext } from "react";
 import { IconButton, Input } from "@material-ui/core";
 import SendIcon from "@material-ui/icons/Send";
+import { TypeContext } from "./TypeContext";
 const Type = () => {
-  const [text, setText] = useState("");
-
+  const [text, setText] = useContext(TypeContext);
   return (
     <div>
       <form>
